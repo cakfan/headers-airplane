@@ -219,6 +219,9 @@
   .-z-50 {
     z-index: calc(50 * -1);
   }
+  .z-50 {
+    z-index: 50;
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
