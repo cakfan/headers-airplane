@@ -233,11 +233,11 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-\[42px\] {
+    margin-top: 42px;
+  }
   .mt-\[53px\] {
     margin-top: 53px;
-  }
-  .mt-\[58px\] {
-    margin-top: 58px;
   }
   .mt-\[66px\] {
     margin-top: 66px;
@@ -248,6 +248,12 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
+  .mr-\[78px\] {
+    margin-right: 78px;
+  }
+  .mr-\[101px\] {
+    margin-right: 101px;
+  }
   .mr-\[238px\] {
     margin-right: 238px;
   }
@@ -256,6 +262,9 @@
   }
   .ml-\[180\.37px\] {
     margin-left: 180.37px;
+  }
+  .ml-auto {
+    margin-left: auto;
   }
   .block {
     display: block;
@@ -320,17 +329,8 @@
   .w-\[176px\] {
     width: 176px;
   }
-  .w-\[178\.5px\] {
-    width: 178.5px;
-  }
-  .w-\[178px\] {
-    width: 178px;
-  }
   .w-\[179px\] {
     width: 179px;
-  }
-  .w-\[180px\] {
-    width: 180px;
   }
   .w-\[187px\] {
     width: 187px;
@@ -343,9 +343,6 @@
   }
   .w-\[199px\] {
     width: 199px;
-  }
-  .w-\[223px\] {
-    width: 223px;
   }
   .w-\[224px\] {
     width: 224px;
@@ -373,9 +370,6 @@
   }
   .w-\[1512px\] {
     width: 1512px;
-  }
-  .w-auto {
-    width: auto;
   }
   .w-full {
     width: 100%;
@@ -407,11 +401,11 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
-  }
-  .gap-1\.5 {
-    gap: calc(var(--spacing) * 1.5);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -434,17 +428,11 @@
   .gap-\[73px\] {
     gap: 73px;
   }
-  .gap-\[74px\] {
-    gap: 74px;
-  }
   .overflow-clip {
     overflow: clip;
   }
   .overflow-hidden {
     overflow: hidden;
-  }
-  .overflow-visible {
-    overflow: visible;
   }
   .rounded-\[50px\] {
     border-radius: 50px;
@@ -499,14 +487,14 @@
   .pt-0\.5 {
     padding-top: calc(var(--spacing) * 0.5);
   }
-  .pt-1 {
-    padding-top: calc(var(--spacing) * 1);
-  }
   .pt-\[15px\] {
     padding-top: 15px;
   }
   .pr-\[88px\] {
     padding-right: 88px;
+  }
+  .pr-\[101px\] {
+    padding-right: 101px;
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
@@ -516,6 +504,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-end {
+    text-align: end;
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -616,7 +607,7 @@
   .hover\:shadow-secondary {
     &:hover {
       @media (hover: hover) {
-        --tw-shadow: 0 4px 10px 0 var(--tw-shadow-color, rgba(150, 152, 169, 0.8));
+        --tw-shadow: 0 4px 10px 0 var(--tw-shadow-color, rgba(150, 152, 169, 0.2));
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
     }
