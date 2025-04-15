@@ -402,6 +402,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
   }
