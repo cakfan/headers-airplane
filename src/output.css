@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
@@ -241,8 +240,14 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
+  .mr-\[238px\] {
+    margin-right: 238px;
+  }
   .mb-\[81px\] {
     margin-bottom: 81px;
+  }
+  .ml-\[180\.37px\] {
+    margin-left: 180.37px;
   }
   .block {
     display: block;
@@ -385,17 +390,6 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-dashed {
-    --tw-border-style: dashed;
-    border-style: dashed;
-  }
-  .border-red-500 {
-    border-color: var(--color-red-500);
-  }
   .bg-accent {
     background-color: var(--accent);
   }
@@ -521,6 +515,14 @@
       }
     }
   }
+  .hover\:shadow-secondary {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 4px 10px 0 var(--tw-shadow-color, rgba(150, 152, 169, 0.8));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
 }
 :root {
   --background: #fafafa;
@@ -535,11 +537,6 @@
     font-family: "Poppins", sans-serif;
     color: var(--foreground);
   }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-leading {
   syntax: "*";
@@ -621,7 +618,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-duration: initial;
