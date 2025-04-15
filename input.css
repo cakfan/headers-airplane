@@ -17,7 +17,7 @@
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --shadow-primary: 0 4px 10px 0 rgba(92, 64, 204, 0.8);
-  --shadow-secondary: 0 4px 10px 0 rgba(31, 20, 73, 0.8);
+  --shadow-secondary: 0 4px 10px 0 rgba(150, 152, 169, 0.8);
 }
 
 @layer base {
